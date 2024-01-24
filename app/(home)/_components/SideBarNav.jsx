@@ -1,6 +1,7 @@
 "use client";
 import { Layout, Mail, Search, Shield } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 const SideBarNav = () => {
   const menuList = [
@@ -34,15 +35,17 @@ const SideBarNav = () => {
 
   return (
     <div className="h-full bg-white border-r flex flex-col overflow-y-auto shadow-md ">
-      <div className="p-5 border-b">
-        <Image src="/logo.svg" alt="logo" height={143} width={143} />
+      <div className="p-6 ">
+        <Link href="/">
+          <Image src="/logo.svg" alt="logo" height={143} width={143} priority />
+        </Link>
       </div>
 
       <div className="flex flex-col  text-left">
         {menuList.map((item, index) => (
           <div
             key={item.id}
-            className={`flex gap-2 items-center p-4 px-6 text-gray-500 hover:bg-gray-100 cursor-pointer ${
+            className={`flex gap-2 items-center p-6 px-6 text-gray-500 hover:bg-gray-100 cursor-pointer ${
               activeIndex === index ? "bg-purple-50 text-purple-800" : null
             }`}
             onClick={() => setActiveIndex(index)}

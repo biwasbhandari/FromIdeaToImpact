@@ -12,7 +12,7 @@ const Header = () => {
   const router = useRouter();
   return (
     <div>
-      <h1 className="ml-64 p-6 border-b flex items-center justify-between ">
+      <h1 className=" p-6 border-b flex  ml-64 items-center justify-between ">
         <SearchBar />
         {user ? (
           <UserButton />
