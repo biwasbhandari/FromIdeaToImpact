@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# EduHacks Hackathon Project
 
-## Getting Started
 
-First, run the development server:
+## Admin Credientials
+Username: admin
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Password: admin123
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## FromIdeaToImpact
 
-## Learn More
+## Description
 
-To learn more about Next.js, take a look at the following resources:
+FromIdeaToImpact is a platform where individuals can share their personal stories, achievements, and life events. This hackathon project aims to create a user-friendly website that allows users to submit their stories, which will be published as blogs for others to read and share. The platform is designed to inspire, motivate, and build a community through the power of storytelling.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Submit Your Story:** Share your personal achievements, challenges, or important life events.
+- **Blog Publication:** Submitted stories will be published as blogs for others to read and share
 
-## Deploy on Vercel
+## Technologies Used
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Next.js
+- React
+- Github
+- Vercel
+- MongoDB 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
