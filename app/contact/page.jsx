@@ -10,7 +10,13 @@ const ContactPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.imgContainer}>
-        <Image src="/contact.png" alt="" fill className={styles.img} />
+        <Image
+          src="/contact.png"
+          alt="contact"
+          height={500}
+          width={500}
+          className={styles.img}
+        />
       </div>
       <div className={styles.formContainer}>
         <form action="" className={styles.form}>

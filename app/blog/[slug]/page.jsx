@@ -46,14 +46,14 @@ const SinglePostPage = async ({ params }) => {
         <h1 className={styles.title}>{post.title}</h1>
         <div className={styles.detail}>
           {post && (
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div>Loading...</div>} key={post.userId}>
               <PostUser userId={post.userId} />
             </Suspense>
           )}
           <div className={styles.detailText}>
             <span className={styles.detailTitle}>Published</span>
             <span className={styles.detailValue}>
-              {post.createdAt.toString().slice(4, 16)}
+              {post.createdAt.toLocaleString().slice(0, 10)}
             </span>
           </div>
         </div>

@@ -1,35 +1,44 @@
 .container {
   display: flex;
-  gap: 100px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 90vh;
 }
 
 .textContainer {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 20px;
 }
 
 .subtitle {
   color: var(--btn);
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
 .title {
-  font-size: 54px;
+  font-size: 36px;
+  letter-spacing: 1px;
 }
 
 .desc {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
+  letter-spacing: 0.5px;
 }
 
 .boxes {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .box {
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -37,6 +46,8 @@
 
 .box h1 {
   color: var(--btn);
+  font-size: 24px;
+  letter-spacing: 1px;
 }
 
 .imgContainer {
@@ -45,17 +56,28 @@
 }
 
 .img {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .textContainer {
     text-align: center;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
   }
 
   .boxes {
     flex-direction: column;
-    gap: 50px;
+    align-items: center;
   }
 }

@@ -8,11 +8,18 @@ const PostCard = ({ post }) => {
       <div className={styles.top}>
         {post.img && (
           <div className={styles.imgContainer}>
-            <Image src={post.img} alt="" fill className={styles.img} />
+            <Image
+              // src={post.img}
+              src="https://i.pinimg.com/564x/6b/fb/e6/6bfbe6832fe1e55f1a4e8b90c3ffdf95.jpg"
+              alt="image"
+              height={400}
+              width={600}
+              className={styles.img}
+            />
           </div>
         )}
         <span className={styles.date}>
-          {post.createdAt?.toString().slice(4, 16)}
+          {post.createdAt?.toLocaleString().slice(0, 10)}
         </span>
       </div>
       <div className={styles.bottom}>

@@ -5,10 +5,12 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
-        <h1 className={styles.title}>Creative Thoughts Agency.</h1>
+        <h1 className={styles.title}>
+          Transforming Ideas into Captivating Blogs.
+        </h1>
         <p className={styles.desc}>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
-          blanditiis adipisci minima reiciendis a autem assumenda dolore.
+          Let us weave your ideas and stories into compelling narratives that
+          captivate and inspire
         </p>
         <div className={styles.buttons}>
           <button className={styles.button}>Learn More</button>
@@ -19,7 +21,13 @@ const Home = () => {
         </div>
       </div>
       <div className={styles.imgContainer}>
-        <Image src="/hero.gif" alt="" fill className={styles.heroImg} />
+        <Image
+          src="/hero.gif"
+          alt=""
+          height={500}
+          width={500}
+          className={styles.heroImg}
+        />
       </div>
     </div>
   );
