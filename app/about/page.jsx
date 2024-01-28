@@ -16,10 +16,9 @@ const AboutPage = () => {
           Turning Ideas into Engaging Blog Narratives.
         </h1>
         <p className={styles.desc}>
-          Embark on a journey with Creative Thoughts Agency, where we specialize
-          in transforming your unique ideas and stories into captivating blog
-          narratives. Our commitment to creativity and precision ensures that
-          each blog we create is not just informative but also engaging and
+          Join us at Creative Thoughts Agency, where we specialize in turning
+          your unique ideas into captivating blog narratives. Our commitment to
+          creativity ensures each blog is informative, engaging, and
           thought-provoking. Explore the power of storytelling with us and let
           your ideas resonate in the digital space.
         </p>
@@ -37,6 +36,13 @@ const AboutPage = () => {
             <p>Tailored to Your Unique Ideas</p>
           </div>
         </div>
+        <p className={styles.share}>
+          <span>
+            Share your story with us, and let it shine on our platform. Send
+            your narrative, and we'll bring it to life in the digital realm at
+            info@eduhacks.com
+          </span>
+        </p>
       </div>
       <div className={styles.imgContainer}>
         <Image

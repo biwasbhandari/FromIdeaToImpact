@@ -4,6 +4,8 @@
   align-items: center;
   justify-content: space-between;
   color: gray;
+  border-top: 2px solid gray;
+  margin-top: 5px;
 }
 
 .logo {

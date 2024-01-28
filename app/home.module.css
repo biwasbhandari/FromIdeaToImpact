@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  height: 90vh;
+  min-height: 90vh;
   align-items: center;
 }
 
@@ -11,14 +11,17 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
 }
 
 .title {
   font-size: 48px;
+  text-align: center;
 }
 
 .desc {
   font-size: 18px;
+  text-align: center;
 }
 
 .buttons {
@@ -41,14 +44,6 @@
   color: var(--text);
 }
 
-.brands {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  position: relative;
-  filter: grayscale(1);
-}
-
 .imgContainer {
   flex: 1;
   position: relative;
@@ -61,7 +56,7 @@
 
 @media (max-width: 1024px) {
   .container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
 
@@ -73,9 +68,5 @@
 @media (max-width: 768px) {
   .title {
     font-size: 36px;
-  }
-
-  .brands {
-    max-width: 100%;
   }
 }

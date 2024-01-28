@@ -8,6 +8,10 @@
   padding: 10px;
   cursor: pointer;
   font-weight: bold;
+  background-color: purple;
+  border-radius: 4px;
+  color: white;
+  border: none;
 }
 
 .menuButton,
