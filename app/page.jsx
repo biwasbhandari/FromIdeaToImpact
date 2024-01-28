@@ -27,6 +27,7 @@ const Home = () => {
           height={500}
           width={500}
           className={styles.heroImg}
+          priority
         />
       </div>
     </div>

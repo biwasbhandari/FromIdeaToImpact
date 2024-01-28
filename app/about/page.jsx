@@ -45,6 +45,7 @@ const AboutPage = () => {
           height={500}
           width={500}
           className={styles.img}
+          priority
         />
       </div>
     </div>
