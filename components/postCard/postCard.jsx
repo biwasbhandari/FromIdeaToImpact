@@ -9,12 +9,12 @@ const PostCard = ({ post }) => {
         {post.img && (
           <div className={styles.imgContainer}>
             <Image
-              // src={post.img}
-              src="https://i.pinimg.com/564x/6b/fb/e6/6bfbe6832fe1e55f1a4e8b90c3ffdf95.jpg"
+              src={post.img}
               alt="image"
               height={400}
               width={600}
               className={styles.img}
+              priority
             />
           </div>
         )}
