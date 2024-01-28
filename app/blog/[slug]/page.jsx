@@ -32,21 +32,18 @@ const SinglePostPage = async ({ params }) => {
   // FETCH DATA WITH AN API
   const post = await getData(slug);
 
-  // FETCH DATA WITHOUT AN API
-  // const post = await getPost(slug);
-
   return (
     <div className={styles.container}>
       {post.img && (
-        <div className={styles.imgContainer}>
-          <Image src={post.img} alt="" fill className={styles.img} />
+        <div className={styles.imgContainer} key={post.title}>
+          <Image src={post.img} alt="image" fill className={styles.img} />
         </div>
       )}
       <div className={styles.textContainer}>
         <h1 className={styles.title}>{post.title}</h1>
         <div className={styles.detail}>
           {post && (
-            <Suspense fallback={<div>Loading...</div>} key={post.userId}>
+            <Suspense fallback={<div>Loading...</div>} key={post.title}>
               <PostUser userId={post.userId} />
             </Suspense>
           )}

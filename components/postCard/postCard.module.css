@@ -7,15 +7,18 @@
 
 .top {
   display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
 }
 
 .imgContainer {
-  width: 90%;
-  height: 400px;
+  width: 100%; /* Adjusted width for responsiveness */
+  max-height: 400px; /* Set a maximum height for the image container */
   position: relative;
 }
 
 .img {
+  width: 100%; /* Ensure the image takes up the entire width of its container */
+  height: 100%; /* Ensure the image takes up the entire height of its container */
   object-fit: cover;
 }
 
@@ -26,13 +29,13 @@
 }
 
 .title {
-  width: 90%;
+  width: 100%; /* Adjusted width for responsiveness */
   font-size: 24px;
   margin-bottom: 20px;
 }
 
 .desc {
-  width: 90%;
+  width: 100%; /* Adjusted width for responsiveness */
   margin-bottom: 20px;
   font-weight: 300;
   color: gray;
@@ -40,4 +43,15 @@
 
 .link {
   text-decoration: underline;
+}
+
+/* Media Query for screens smaller than 600px */
+@media (max-width: 600px) {
+  .imgContainer {
+    max-height: 300px; /* Adjust the maximum height for smaller screens */
+  }
+
+  .title {
+    font-size: 20px; /* Adjust the font size for smaller screens */
+  }
 }

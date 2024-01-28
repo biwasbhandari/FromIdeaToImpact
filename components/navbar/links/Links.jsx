@@ -3,7 +3,14 @@
 import { useState } from "react";
 import styles from "./links.module.css";
 import NavLink from "./navLink/navLink";
-import Image from "next/image";
+
+import {
+  Menu,
+  CrossIcon,
+  Cross,
+  SidebarClose,
+  SidebarOpen,
+} from "lucide-react";
 import { handleLogout } from "@/lib/action";
 
 const links = [
@@ -51,18 +58,26 @@ const Links = ({ session }) => {
           <NavLink item={{ title: "Login", path: "/login" }} />
         )}
       </div>
-      <Image
-        className={styles.menuButton}
-        src="/menu.png"
-        alt=""
-        width={30}
-        height={30}
-        onClick={() => setOpen((prev) => !prev)}
-      />
+
+      {open ? (
+        <SidebarOpen
+          className={styles.menuButton}
+          onClick={() => setOpen((prev) => !prev)}
+        />
+      ) : (
+        <Menu
+          className={styles.menuButton}
+          onClick={() => setOpen((prev) => !prev)}
+        />
+      )}
       {open && (
         <div className={styles.mobileLinks}>
           {links.map((link) => (
-            <NavLink item={link} key={link.title} />
+            <NavLink
+              item={link}
+              key={link.title}
+              onClick={() => setOpen(false)}
+            />
           ))}
         </div>
       )}

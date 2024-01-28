@@ -11,18 +11,18 @@ const PostCard = ({ post }) => {
             <Image
               src={post.img}
               alt="image"
-              height={400}
+              height={600}
               width={600}
               className={styles.img}
               priority
             />
           </div>
         )}
+      </div>
+      <div className={styles.bottom}>
         <span className={styles.date}>
           {post.createdAt?.toLocaleString().slice(0, 10)}
         </span>
-      </div>
-      <div className={styles.bottom}>
         <h1 className={styles.title}>{post.title}</h1>
         <p className={styles.desc}>{post.body}</p>
         <Link className={styles.link} href={`/blog/${post.slug}`}>
